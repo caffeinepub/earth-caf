@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/assets/fonts/PlayfairDisplay.woff2") format("woff2");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 1rem;
+
+    /* Earth Café color system */
+    --background: 0.928 0.022 75;
+    --foreground: 0.26 0.045 42;
+    --card: 0.96 0.015 75;
+    --card-foreground: 0.26 0.045 42;
+    --popover: 0.96 0.015 75;
+    --popover-foreground: 0.26 0.045 42;
+    --primary: 0.67 0.065 148;
+    --primary-foreground: 0.99 0 0;
+    --secondary: 0.64 0.09 52;
+    --secondary-foreground: 0.99 0 0;
+    --muted: 0.88 0.018 68;
+    --muted-foreground: 0.5 0.03 50;
+    --accent: 0.84 0.025 70;
+    --accent-foreground: 0.26 0.045 42;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.84 0.025 70;
+    --input: 0.84 0.025 70;
+    --ring: 0.67 0.065 148;
+    --footer-bg: 0.6 0.058 148;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.96 0.015 75;
+    --sidebar-foreground: 0.26 0.045 42;
+    --sidebar-primary: 0.67 0.065 148;
+    --sidebar-primary-foreground: 0.99 0 0;
+    --sidebar-accent: 0.88 0.018 68;
+    --sidebar-accent-foreground: 0.26 0.045 42;
+    --sidebar-border: 0.84 0.025 70;
+    --sidebar-ring: 0.67 0.065 148;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Poppins", sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Playfair Display", serif;
+  }
+}
